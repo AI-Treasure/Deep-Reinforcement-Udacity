@@ -20,7 +20,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
+The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 500 consecutive episodes.
 
 ### Getting Started
 
@@ -34,9 +34,22 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+2. The downloaded files need to be accessed in the Navigation.ipynb file (This file is described below).
 
-### Instructions
+To get the project running, you need all the files placed in the /p1_navigation subdirectory. The files are described in the next secrion
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+### File Dependencies
+
+Below is a list of the files that you need to run this project
+
+The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
+- Navigation.ipynb = This file is the main file and needs to be executed in a Jupyter Notebook
+- dqn_agent.py = This file contains the code describing the agent. It also contains the DQN update mechanism
+- model.py = This file containt the (simple) PyTorch Network that is used to approximate the Q surface
+- mpodel.pt = This file contains the checkpoint and contains all the weights from a solved network
+- report.pdf = This pdf file contains a description of the whole project.
+
+- **`1`** - move backward.
+- **`2`** - turn left.
+
 
