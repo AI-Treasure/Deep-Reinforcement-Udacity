@@ -1,14 +1,14 @@
 
 # Report
 
-The agents in this project are trained using the Deep Deterministic Policy Gradient (DDPG) algoritm, which is seen as an Actor Critic approach. Although some researchers think that DDPG is best clssified as DWN method for continour action spaces. This is because in the DDPG approach is that the actions are non stochastic and deterministic. 
+The agents in this project are trained using the Deep Deterministic Policy Gradient (DDPG) algoritm, which is seen as an Actor-Critic approach. Although some researchers think that DDPG is best clssified as DQN method for continous action spaces. This is because in the DDPG approach is that the actions are non stochastic and deterministic. 
 
-But having said this, the Actor and Critic network still work in a similar manner compared to other Actor-Critic algorithms. That is, the actor network takes in the current state and outputs an action set for that state. The critic uses this action and the state and returns the estimated Q-value of the state-action pair. This Q value is then used by the actor to evaluate the action.or network to evaluate its choice of action.
+But having said this, the Actor and Critic network in DDPG still work in a similar manner compared to other Actor-Critic algorithms. That is, the actor network takes in the current state and outputs an action set for that state. The critic uses this action and the state and returns the estimated Q-value of the state-action pair. This Q value is then used by the actor to evaluate the action.or network to evaluate its choice of action.
 
 Other elements in this approach are :
-- local and target network for both the Actor and the Critic (where two target NN are updated using soft updates)
+- Local and target network for both the Actor and the Critic (where two target NN are updated using soft updates)
 - Experience replay
-- In the actions, noise has been added using the Ornstein -Uhlenbeck process. This in general encourages exploration.
+- In the actions, noise has been added using the Ornstein-Uhlenbeck process. This in general encourages exploration.
 
 Below we specify the hyperparameters that have been used in the training
 
@@ -22,7 +22,6 @@ Below we specify the hyperparameters that have been used in the training
 |Tau|0.001|
 |Buffer Size|100000|
 |Batch Size|128|
-
 
 For the local and target network for the actor, a fully connected layer with 256 nodes, followed by a fully connected layer of 128 nodes has been used, before tuning it down to the action space with a tanh. (Note that this network is fully deterministic.)
 
