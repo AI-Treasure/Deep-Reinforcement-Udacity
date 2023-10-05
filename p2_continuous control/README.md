@@ -24,9 +24,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 For this project, I worked with 20 identical agents, each with its own copy of the environment.  
 
-This version is useful for algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), and [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.  
-
-In my approach, I used DDPG.
+This version is useful for algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), and [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience. In my approach, I used DDPG.
 
 The problem is considered to be solved, when the  agents must get an average score of +30 over 100 consecutive episodes, and over all agents.  
 
