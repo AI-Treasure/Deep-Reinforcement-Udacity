@@ -31,6 +31,7 @@ The agents solved the environment in  178 episodes. So after 178 episodes, a col
 
 Below is depicted a picture of the rewards over time.
 
+![reward](https://github.com/AI-Treasure/Deep-Reinforcement-Udacity/blob/main/p2_continuous%20control/plot%20scores.png)
 
 Of course, many improvements can be made, because this is just scratching the surface.
 
