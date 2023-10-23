@@ -7,8 +7,8 @@ But having said this, the Actor and Critic network still work in a similar manne
 
 Other elements in this approach are :
 - local and target network for both the Actor and the Critic (where two target NN are updated using soft updates)
-- Experience replay
 - In the actions, noise has been added using the Ornstein -Uhlenbeck process. This in general encourages exploration.
+- Experience replay
 
 Below we specify the hyperparameters that have been used in the training
 
