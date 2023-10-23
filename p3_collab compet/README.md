@@ -17,7 +17,7 @@ The observation space consists of 8 variables corresponding to the position and 
 
 The task is episodic, and in order to solve the environment, the agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
-In my solution, I used the DDPG solution that was also applied to the second assignment, with some small adjustments. Similar as before, I have used the Ornstein-Uhlenbeck process to add noise to the action and encourage exploration. For more details on my set up, please read my report document.
+In my solution, I used the DDPG solution that was also applied to the second assignment, with some small adjustments. Similar as in the second assignment, I have used the Ornstein-Uhlenbeck process to add noise to the action and encourage exploration. For more details on my set up, please read my Report document.
 
 ### Getting Started
 
