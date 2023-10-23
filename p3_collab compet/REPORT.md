@@ -32,6 +32,7 @@ The agents solved the environment in  1231 episodes. So after 1231 episodes, a c
 
 Below is depicted a picture of the rewards over time.
 
+https://github.com/AI-Treasure/Deep-Reinforcement-Udacity/blob/main/p3_collab%20compet/plot%20scores.png?raw=true
 
 Of course, many improvements can be made, because this is just scratching the surface.
 
