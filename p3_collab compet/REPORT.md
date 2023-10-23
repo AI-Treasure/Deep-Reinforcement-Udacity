@@ -1,7 +1,7 @@
 
 # Report
 
-The agents in this project are trained using the Deep Deterministic Policy Gradient (DDPG) algoritm, which is seen as an Actor Critic approach. (This approach was also used in the second assignment in the reacher environment.) Although some researchers think that DDPG is best clssified as DWN method for continous action spaces. This is because in the DDPG approach is that the actions are non stochastic and deterministic. 
+The agents in this project are trained using the Deep Deterministic Policy Gradient (DDPG) algoritm, which is seen as an Actor Critic approach. (This approach was also used in the second assignment in the reacher environment.) Although some researchers think that DDPG is best classified as DQN method for continous action spaces. This is because in the DDPG approach is that the actions are non stochastic and deterministic. 
 
 But having said this, the Actor and Critic network still work in a similar manner compared to other Actor-Critic algorithms. That is, the actor network takes in the current state and outputs an action set for that state. The critic uses this action and the state and returns the estimated Q-value of the state-action pair. This Q value is then used by the actor to evaluate the action.or network to evaluate its choice of action.
 
